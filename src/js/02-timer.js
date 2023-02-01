@@ -44,6 +44,7 @@ function startTimer() {
         if (selectDate < Date.now()) {
             clearInterval(intervalId);
             isActive = false;
+            startButton.disabled = true;
             daysElement.textContent = '00';
             hoursElement.textContent = '00';
             minutesElement.textContent = '00';
